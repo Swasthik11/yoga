@@ -1,0 +1,243 @@
+.pageHero {
+  position: relative;
+  padding: calc(var(--nav-h) + 4rem) 0 6rem;
+  background: linear-gradient(135deg, var(--sage-dark) 0%, var(--sage) 60%, var(--sage-light) 100%);
+  overflow: hidden;
+}
+
+.pageHeroBg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at 80% 50%, rgba(200,169,110,0.1) 0%, transparent 60%);
+}
+
+.pageHeroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.pageHeroTitle {
+  color: var(--white);
+  margin: 1rem 0 1.2rem;
+}
+
+.pageHeroTitle em {
+  font-style: italic;
+  color: var(--accent-light);
+}
+
+.pageHeroSub {
+  color: rgba(245,240,232,0.75);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 520px;
+}
+
+.pageHeroWave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+.pageHeroWave svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── FEATURED ─── */
+.featured {
+  background: var(--white);
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.featuredImg {
+  height: 560px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.featuredRole {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--sage);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.featuredStats {
+  display: flex;
+  gap: 2.5rem;
+  margin: 1.8rem 0 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.featuredStat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--sage-dark);
+}
+
+.featuredStat span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.specialties {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ─── TRAINERS GRID ─── */
+.trainerSection {
+  background: var(--cream);
+}
+
+.trainersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.trainerCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.trainerCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.trainerImg {
+  height: 280px;
+  width: 100%;
+}
+
+.trainerBody {
+  padding: 1.8rem;
+}
+
+.trainerMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.trainerName {
+  font-size: 1.3rem;
+  color: var(--sage-dark);
+}
+
+.trainerRole {
+  font-size: 0.78rem;
+  color: var(--sage-light);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+.trainerRating {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(200,169,110,0.12);
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.trainerSpecialties {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.trainerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--cream-dark);
+}
+
+.trainerExp {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.bookBtn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sage);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.bookBtn:hover {
+  color: var(--sage-dark);
+  letter-spacing: 0.12em;
+}
+
+/* ─── JOIN CTA ─── */
+.joinCta {
+  background: var(--white);
+}
+
+.ctaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 4rem;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+  border-radius: 1.5rem;
+  border: 1px solid var(--stone);
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .trainersGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .featuredGrid { grid-template-columns: 1fr; }
+  .featuredImg { height: 380px; }
+  .ctaInner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  .trainersGrid { grid-template-columns: 1fr; }
+  .ctaInner { padding: 2rem 1.5rem; }
+  .ctaBtns { flex-direction: column; width: 100%; }
+}
