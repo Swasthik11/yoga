@@ -222,15 +222,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-.img-placeholder::after {
-  content: '🌿';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  opacity: 0.3;
-}
+
 
 /* ───── DIVIDER ───── */
 .divider {
