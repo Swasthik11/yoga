@@ -8,12 +8,10 @@
   padding-top: var(--nav-h);
   overflow: hidden;
 }
-
 .heroBg {
   position: absolute;
   inset: 0;
 }
-
 .heroBgImage {
   position: absolute;
   inset: 0;
@@ -21,7 +19,6 @@
   background-size: cover;
   background-position: center;
 }
-
 .heroOverlay {
   position: absolute;
   inset: 0;
@@ -32,25 +29,6 @@
     rgba(74,94,58,0.5) 100%
   );
 }
-
-.heroLeaves {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.leaf1, .leaf2, .leaf3 {
-  position: absolute;
-  font-size: 8rem;
-  opacity: 0.04;
-  animation: floatLeaf 8s ease-in-out infinite;
-}
-
-.leaf1 { top: 15%; left: 5%; animation-delay: 0s; }
-.leaf2 { top: 40%; right: 8%; font-size: 12rem; animation-delay: 3s; }
-.leaf3 { bottom: 20%; left: 30%; font-size: 6rem; animation-delay: 5s; }
-
 .heroContent {
   position: relative;
   z-index: 1;
@@ -58,7 +36,6 @@
   padding: 4rem 0;
   animation: fadeUp 1s ease forwards;
 }
-
 .heroTitle {
   font-size: clamp(3.5rem, 8vw, 7rem);
   font-weight: 300;
@@ -67,12 +44,10 @@
   line-height: 1.05;
   margin: 1rem 0 1.5rem;
 }
-
 .heroTitle em {
   font-style: italic;
   color: var(--accent-light);
 }
-
 .heroSubtitle {
   font-size: 1.15rem;
   line-height: 1.75;
@@ -81,13 +56,11 @@
   margin-bottom: 2.5rem;
   font-weight: 300;
 }
-
 .heroCtas {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
-
 .statsBar {
   position: relative;
   z-index: 1;
@@ -96,21 +69,16 @@
   backdrop-filter: blur(12px);
   border-top: 1px solid rgba(245,240,232,0.12);
 }
-
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  divide: var(--white);
 }
-
 .stat {
   padding: 2rem 1.5rem;
   text-align: center;
   border-right: 1px solid rgba(245,240,232,0.12);
 }
-
 .stat:last-child { border-right: none; }
-
 .statValue {
   display: block;
   font-family: var(--font-display);
@@ -120,7 +88,6 @@
   line-height: 1;
   margin-bottom: 0.3rem;
 }
-
 .statLabel {
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -135,12 +102,10 @@
   gap: 5rem;
   align-items: center;
 }
-
 .aboutImages {
   position: relative;
   height: 520px;
 }
-
 .aboutImg1 {
   position: absolute;
   top: 0;
@@ -150,7 +115,6 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
-
 .aboutImg2 {
   position: absolute;
   bottom: 0;
@@ -160,7 +124,6 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
-
 .aboutBadge {
   position: absolute;
   bottom: 30px;
@@ -175,7 +138,6 @@
   letter-spacing: 0.05em;
   box-shadow: var(--shadow-md);
 }
-
 .aboutBadgeNum {
   display: block;
   font-family: var(--font-display);
@@ -189,13 +151,11 @@
 .services {
   background: var(--cream);
 }
-
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
-
 .serviceCard {
   background: var(--white);
   padding: 2.5rem 2rem;
@@ -203,24 +163,20 @@
   transition: var(--transition);
   border: 1px solid transparent;
 }
-
 .serviceCard:hover {
   border-color: var(--sage);
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
 }
-
 .serviceIcon {
   font-size: 2.2rem;
   margin-bottom: 1.2rem;
 }
-
 .serviceTitle {
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   color: var(--sage-dark);
 }
-
 .serviceLink {
   display: inline-block;
   margin-top: 1.2rem;
@@ -231,9 +187,7 @@
   color: var(--sage);
   transition: var(--transition);
 }
-
 .serviceLink:hover {
-  gap: 0.5rem;
   color: var(--sage-dark);
   letter-spacing: 0.12em;
 }
@@ -244,7 +198,6 @@
   padding: 6rem 0;
   overflow: hidden;
 }
-
 .promoBg {
   position: absolute;
   inset: 0;
@@ -252,13 +205,11 @@
   background-size: cover;
   background-position: center;
 }
-
 .promoOverlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(30,40,22,0.88) 0%, rgba(46,61,35,0.7) 100%);
 }
-
 .promoContent {
   max-width: 560px;
 }
@@ -270,13 +221,11 @@
   gap: 5rem;
   align-items: center;
 }
-
 .whyCards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
-
 .whyCard {
   display: flex;
   gap: 1rem;
@@ -285,19 +234,16 @@
   border-radius: var(--radius-lg);
   transition: var(--transition);
 }
-
 .whyCard:hover {
   background: var(--white);
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
-
 .whyIcon {
   font-size: 1.8rem;
   flex-shrink: 0;
   margin-top: 0.2rem;
 }
-
 .whyTitle {
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -310,32 +256,27 @@
 .testimonialSection {
   background: var(--cream);
 }
-
 .testimonialGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
-
 .testimonialCard {
   background: var(--white);
   padding: 2rem;
   border-radius: var(--radius-lg);
   transition: var(--transition);
 }
-
 .testimonialCard:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
 }
-
 .testimonialStars {
   color: var(--accent);
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
 }
-
 .testimonialText {
   font-size: 0.92rem;
   line-height: 1.75;
@@ -343,13 +284,11 @@
   margin-bottom: 1.5rem;
   font-style: italic;
 }
-
 .testimonialAuthor {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-
 .testimonialAvatar {
   width: 44px;
   height: 44px;
@@ -357,14 +296,12 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-
 .testimonialAuthor strong {
   display: block;
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--charcoal);
 }
-
 .testimonialAuthor span {
   font-size: 0.75rem;
   color: var(--muted);
@@ -374,7 +311,6 @@
 .ctaSection {
   background: var(--white);
 }
-
 .ctaBox {
   background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
   border-radius: 2rem;
@@ -384,7 +320,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .ctaBox::before {
   content: '🌿';
   position: absolute;
@@ -400,7 +335,6 @@
   .serviceGrid { grid-template-columns: repeat(2, 1fr); }
   .testimonialGrid { grid-template-columns: repeat(2, 1fr); }
 }
-
 @media (max-width: 900px) {
   .aboutGrid { grid-template-columns: 1fr; }
   .aboutImages { height: 380px; }
@@ -409,7 +343,6 @@
   .stat { border-right: 1px solid rgba(245,240,232,0.12); }
   .stat:nth-child(2) { border-right: none; }
 }
-
 @media (max-width: 640px) {
   .serviceGrid { grid-template-columns: 1fr; }
   .testimonialGrid { grid-template-columns: 1fr; }

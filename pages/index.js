@@ -66,10 +66,10 @@ export default function Home() {
   ];
 
   const whyUs = [
-    { icon: '📅', title: 'Flexible Scheduling', desc: 'Morning, evening, and weekend classes to fit your life.' },
-    { icon: '🎯', title: 'Personalized Programs', desc: 'Plans designed around your goals, body type, and experience.' },
-    { icon: '🏅', title: 'Expert Instructors', desc: 'RYT-500 certified teachers with deep passion and knowledge.' },
-    { icon: '🌍', title: 'Holistic Approach', desc: 'Mind, body, and spirit — we address the whole of you.' },
+    {  title: 'Flexible Scheduling', desc: 'Morning, evening, and weekend classes to fit your life.' },
+    {  title: 'Personalized Programs', desc: 'Plans designed around your goals, body type, and experience.' },
+    {  title: 'Expert Instructors', desc: 'RYT-500 certified teachers with deep passion and knowledge.' },
+    {  title: 'Holistic Approach', desc: 'Mind, body, and spirit — we address the whole of you.' },
   ];
 
   return (
@@ -86,11 +86,7 @@ export default function Home() {
             style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
           />
           <div className={styles.heroOverlay} />
-          <div className={styles.heroLeaves}>
-            <span className={styles.leaf1}>🍃</span>
-            <span className={styles.leaf2}>🌿</span>
-            <span className={styles.leaf3}>🍃</span>
-          </div>
+
         </div>
 
         <div className="container">
