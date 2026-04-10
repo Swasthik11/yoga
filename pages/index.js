@@ -82,9 +82,15 @@ export default function Home() {
       {/* ─── HERO ─── */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
-          <div className={styles.heroBgImage}
-            style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-          />
+          <video
+            className={styles.heroBgVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
           <div className={styles.heroOverlay} />
 
         </div>
